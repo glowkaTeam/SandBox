@@ -33,6 +33,9 @@
 *.out
 *.app
 
+# Build output
+DeliveryManager.client/build/*
+
 
 ## Visual Studio
 # User-specific files
@@ -41,6 +44,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+
+## Visual Studio Code
+*.code-workspace
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
