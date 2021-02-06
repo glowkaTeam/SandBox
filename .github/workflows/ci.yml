@@ -18,6 +18,6 @@ jobs:
     - name: Run program
       working-directory: DeliveryManager.client/build
       run: ./SandBox
-    # - name: Run tests
-    #   working-directory: bowling/build
-    #   run: ctest -V
+    - name: Run tests
+      working-directory: DeliveryManager.client/build
+      run: ctest -V
