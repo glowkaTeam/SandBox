@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryManager.API", "DeliveryManager.API\DeliveryManager.API.csproj", "{6DC3DBF7-2BD3-4E70-ADF8-D7B72C70B0F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryManager.API", "DeliveryManager.API\DeliveryManager.API.csproj", "{6DC3DBF7-2BD3-4E70-ADF8-D7B72C70B0F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryManager.Models", "DeliveryManager.Models\DeliveryManager.Models.csproj", "{178D535F-93F1-4DD2-AA0E-8A663E77917E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryManager.Models", "DeliveryManager.Models\DeliveryManager.Models.csproj", "{178D535F-93F1-4DD2-AA0E-8A663E77917E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryManager.Services", "DeliveryManager.Services\DeliveryManager.Services.csproj", "{D1B060B9-89D0-410D-B1AE-8F762F332DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryManager.Services", "DeliveryManager.Services\DeliveryManager.Services.csproj", "{D1B060B9-89D0-410D-B1AE-8F762F332DE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliveryManager.Interfaces", "DeliveryManager.Interfaces\DeliveryManager.Interfaces.csproj", "{B84762FD-58C9-44FB-83EC-7CD55AF31A8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryManager.Interfaces", "DeliveryManager.Interfaces\DeliveryManager.Interfaces.csproj", "{B84762FD-58C9-44FB-83EC-7CD55AF31A8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1F06834-DD30-4F3A-849F-BEA3807501DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dacpac", "dacpac", "{3DE5F897-46AD-4A4C-948C-AEFA50789ECA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DeliveryManager.Dacpac", "DeliveryManager.Dacpac\DeliveryManager.Dacpac.sqlproj", "{08C5F336-C4B0-4396-9033-E30D6C03CCBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,22 @@ Global
 		{B84762FD-58C9-44FB-83EC-7CD55AF31A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B84762FD-58C9-44FB-83EC-7CD55AF31A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B84762FD-58C9-44FB-83EC-7CD55AF31A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DC3DBF7-2BD3-4E70-ADF8-D7B72C70B0F3} = {C1F06834-DD30-4F3A-849F-BEA3807501DF}
+		{178D535F-93F1-4DD2-AA0E-8A663E77917E} = {C1F06834-DD30-4F3A-849F-BEA3807501DF}
+		{D1B060B9-89D0-410D-B1AE-8F762F332DE3} = {C1F06834-DD30-4F3A-849F-BEA3807501DF}
+		{B84762FD-58C9-44FB-83EC-7CD55AF31A8A} = {C1F06834-DD30-4F3A-849F-BEA3807501DF}
+		{08C5F336-C4B0-4396-9033-E30D6C03CCBF} = {3DE5F897-46AD-4A4C-948C-AEFA50789ECA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B92C379-8095-44C7-A8DF-0EC900B3BE88}
