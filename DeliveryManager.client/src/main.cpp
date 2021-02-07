@@ -8,10 +8,19 @@ int main()
     CurlURLDownloader downloader("https://deliverymanager.azurewebsites.net/api/test");
     // CurlURLDownloader downloader("https://raw.githubusercontent.com/curl/curl/master/docs/examples/https.c");
 
-    std::cout << downloader.getURL() << '\n';
+    downloader.configure();
+    downloader.download();
 
     std::cout << "\n###########################################\n\n";
-    std::cout << downloader.downloadFile();
+    std::cout << downloader.getDownloadedFile();
+    std::cout << "\n###########################################\n\n";
+
+    downloader.setURL("https://raw.githubusercontent.com/curl/curl/master/docs/examples/https.c");
+    downloader.configure();
+    downloader.download();
+
+    std::cout << "\n###########################################\n\n";
+    std::cout << downloader.getDownloadedFile();
     std::cout << "\n###########################################\n\n";
     return 0;
 }
