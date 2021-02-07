@@ -40,8 +40,13 @@ endif()
 
 enable_testing()
 
+set(CURL_LIBRARY "-lcurl") 
+find_package(CURL REQUIRED) 
+include_directories(${CURL_INCLUDE_DIR})
+
 set(SOURCES
-    src/dummy.cpp)
+    src/dummy.cpp
+    src/curl_helper.cpp)
 
 set(TESTS
     tests/dummy.ut.cpp)
@@ -53,7 +58,7 @@ include_directories(inc)
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
 
 add_executable(${PROJECT_NAME} src/main.cpp)
-target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib)
+target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib ${CURL_LIBRARIES})
 
 add_executable(${PROJECT_NAME}-ut ${TESTS})
 

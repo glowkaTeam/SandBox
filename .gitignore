@@ -47,6 +47,7 @@ DeliveryManager.client/build/*
 
 ## Visual Studio Code
 *.code-workspace
+.vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
