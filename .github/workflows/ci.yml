@@ -1,6 +1,14 @@
 name: SandBox CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+      - feature/*
+      - bugfix/*
+  pull_request:
+    branches:
+      - master 
 
 jobs:
   _SandBox_Cpp_CI:
