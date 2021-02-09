@@ -44,8 +44,12 @@ set(CURL_LIBRARY "-lcurl")
 find_package(CURL REQUIRED) 
 include_directories(${CURL_INCLUDE_DIR})
 
+find_package(nlohmann_json 3.2.0 REQUIRED)
+
+
 set(SOURCES
-    src/curl_helper.cpp)
+    src/curl_helper.cpp
+    src/json_helper.cpp)
 
 set(TESTS
     tests/dummy.ut.cpp)
@@ -57,7 +61,10 @@ include_directories(inc)
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
 
 add_executable(${PROJECT_NAME} src/main.cpp)
-target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib ${CURL_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}
+                      ${PROJECT_NAME}-lib
+                      ${CURL_LIBRARIES}
+                      nlohmann_json::nlohmann_json)
 
 add_executable(${PROJECT_NAME}-ut ${TESTS})
 

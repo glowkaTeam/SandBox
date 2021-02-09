@@ -1,4 +1,5 @@
 #include "curl_helper.hpp"
+#include "json_helper.hpp"
 
 #include <iostream>
 
