@@ -1,5 +1,4 @@
 #include "curl_helper.hpp"
-#include "dummy.hpp"
 
 #include <iostream>
 

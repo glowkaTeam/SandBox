@@ -45,7 +45,6 @@ find_package(CURL REQUIRED)
 include_directories(${CURL_INCLUDE_DIR})
 
 set(SOURCES
-    src/dummy.cpp
     src/curl_helper.cpp)
 
 set(TESTS
